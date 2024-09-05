@@ -1,0 +1,41 @@
+/* Custom CSS to hide the spinner */
+
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.material-return-form-container h1,h2{
+    color: white;
+}
+.material-return-form-container label{
+    color: rgba(255, 255, 255, 0.781);
+}
+.material-return-form-container Button:hover{
+    background:#42B783;
+    color: #27293D;
+    transition: 0.6 s;
+}
+.material-return-form-container input {
+    background:rgba(255, 255, 255, 0.055);
+    border: none;
+    color: white;
+}
+.material-return-form-container input:focus{    
+        outline: none;
+        box-shadow: none;
+        border:2px solid #42B783;
+    
+}
+.material-return-form-container select{
+    background: #333B48;
+    color: #64747A;
+    border: transparent ;
+}

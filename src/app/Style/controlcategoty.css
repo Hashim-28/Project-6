@@ -1,0 +1,92 @@
+.cotainer-up{
+    max-width: 100%;
+    margin:0% 0%;
+    padding: 2rem;
+    /* background-color: #f9f9f9; */
+    border-radius: 8px;
+    margin-top: 80px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.material-return-form-container h1,h2{
+    color: white;
+}
+.material-return-form-container label{
+    color: rgba(255, 255, 255, 0.781);
+}
+.material-return-form-container Button:hover{
+    background:#42B783;
+    color: #27293D;
+    transition: 0.6 s;
+}
+.material-return-form-container input{
+    background:rgba(255, 255, 255, 0.055);
+    border: transparent;
+    color: #64747A;
+}
+.material-return-form-container select{
+    background: #333B48;
+    color: #64747A;
+    border: transparent ;
+}
+@media (min-width:1400px){
+    .first{
+        width: 800px;
+    }
+    .second{
+        width: 800px;
+    }
+}
+@media (min-width:1600px){
+    .first{
+        width: 900px;
+    }
+    .second{
+        width: 900px;
+    }
+}
+@media (min-width:1800px){
+    .first{
+        width: 1000px;
+    }
+    .second{
+        width: 1000px;
+    }
+}
+@media (min-width:2000px){
+    .first{
+        width: 1100px;
+    }
+    .second{
+        width: 1100px;
+    }
+}
+@media (min-width:2200px){
+    .first{
+        width: 1250px;
+    }
+    .second{
+        width: 1250px;
+    }
+}
+@media (min-width:2400px){
+    .first{
+        width: 1950px;
+    }
+    .second{
+        width: 1950px;
+    }
+}
+@media (min-width:2600px){
+    .first{
+        width: 2850px;
+    }
+    .second{
+        width: 2850px;
+    }
+}
