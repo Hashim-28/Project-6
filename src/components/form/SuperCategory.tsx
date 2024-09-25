@@ -28,8 +28,8 @@ const SuperCategory = () => {
 
     return (
        <>
-       
-       <div className="super-category-container bg-slate-200">
+       <div className='w-[106.2%] bg-[#1E1E2E] -ml-10 p-[61px] h-[100vh]  -mb-10 -mt-[40px]'>
+       <div className=" material-return-form-container p-6  bg-[#27303D] mt-[50px]">
             <h1 className="form-title">Super Category</h1>
             <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="form-content">
@@ -82,11 +82,12 @@ const SuperCategory = () => {
                 </form>
             </Form>
         </div>
+        </div>
 
-        <div className='mt-80 -mb-[180px]'>
+        <div className='-mt-[150px]'>
             <ControlCatagory/>
         </div>
-        <div className='-mt-40'>
+        <div className='-mt-[200px]'>
             <MaterialAccount/>
         </div>
        

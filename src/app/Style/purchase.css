@@ -32,10 +32,17 @@ input[type="number"] {
         outline: none;
         box-shadow: none;
         border:2px solid #42B783;
-    
 }
 .material-return-form-container select{
     background: #333B48;
     color: #64747A;
     border: transparent ;
+}
+.material-return-form-container select:focus{
+    outline: none;
+    box-shadow: none;
+    border:2px solid #42B783;
+}
+.btn-create{
+    margin-top: 25px;
 }

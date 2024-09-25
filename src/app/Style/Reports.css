@@ -1,0 +1,81 @@
+.main-container h1{
+    color: white;
+}
+.main-container label{
+    color: rgba(255, 255, 255, 0.781);
+}
+.main-container input{
+    background:rgba(255, 255, 255, 0.055);
+    border: none;
+    color: white;
+}
+.main-container input:focus{
+    outline: none;
+    box-shadow: none;
+    border:2px solid #42B783;
+}
+.main-container select{
+    background: #333B48;
+    color: #64747A;
+    border: transparent ;
+}
+.main-container select:focus{
+    outline: none;
+    box-shadow: none;
+    border:2px solid #42B783;
+    color: white;
+}
+
+
+.material-account Button{
+    background: #0F172A;
+    color: white;
+    border: none;
+}
+.material-account Button:hover{
+background: #42B783;
+color: #0F172A;
+}
+.material-account img{
+    height: 200px;
+    width: 200px;
+}
+.main-container img{
+    height: 200px;
+    width: 200px;
+}
+.react-data-grid{
+    background: #1E1E2E;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+.react-data-grid .rdg-header-row{
+    background: #42B783;
+    color: #202231;
+    font: bold;
+}
+.react-data-grid .rdg-row{
+    background: #27303D;
+}
+.react-data-grid .rdg-row:hover{
+    background: #16162200;
+}
+.react-data-grid .rdg-cell {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.199); /* Border between cells */
+    
+}
+.react-data-grid .rdg-cell:focus{
+    outline: none;
+    border: 2px solid white;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}

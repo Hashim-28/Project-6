@@ -21,7 +21,7 @@
 'use client'
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { ArrowLeft, BadgeDollarSign, Banknote, Building2, CalendarDays, CarFront, ChevronsLeftRightEllipsis, CircleCheck, CirclePercent, ClipboardCheck, ClipboardList, ClipboardMinus, ClipboardPen, ClipboardPenLine, ClipboardPlus, ClipboardType, Database, DoorClosed, FileChartColumnIncreasing, FileSpreadsheet, House, LayoutDashboard, Logs, PanelTopOpen, Rows4, ShoppingCart, SlidersVertical, Store, Undo2, Usb, User, UserRound, UserRoundCog, Users, X, } from 'lucide-react';
+import { ArrowLeft, BadgeDollarSign, Banknote, Building2, CalendarDays, CarFront, ChevronsLeftRightEllipsis, CircleCheck, CirclePercent, ClipboardCheck, ClipboardCopy, ClipboardList, ClipboardMinus, ClipboardPen, ClipboardPenLine, ClipboardPlus, ClipboardType, Database, DoorClosed, FileChartColumnIncreasing, FileSpreadsheet, House, LayoutDashboard, Logs, PanelTopOpen, Rows4, ShoppingCart, SlidersVertical, Store, Undo2, Usb, User, UserRound, UserRoundCog, Users, X, } from 'lucide-react';
 import clsx from 'clsx';
 
 
@@ -77,7 +77,8 @@ function Navbar() {
       items: [
         {  icon: <ClipboardPenLine size={20} color='#42B682' />,name: 'Purchase Requisition', href: '/purchase-request' },
         {  icon: <ClipboardPenLine size={20} color='#42B682' />,name: 'Purchase Order', href: '/purshace-order' },
-        {  icon: <CarFront size={20} color='#42B682' />,name: 'Inward Gate Pass', href: '/inward-gate' },
+        {  icon: <ClipboardCopy  size={20} color='#42B682' />,name: 'Inward Gate Pass', href: '/inward-gate' },
+        {  icon: <ClipboardCopy  size={20} color='#42B682' />,name: 'Outward Gate Pass', href: '/outward-gate' },
         {  icon: <ClipboardMinus size={20} color='#42B682' /> ,name: 'GRN', href: '/grn' },
         {  icon: <ArrowLeft size={20} color='#42B682' />,name: 'Material Return Note', href: '/material-return-note' },
         {  icon: <FileSpreadsheet size={20} color='#42B682' />,name: 'Store Issuance Note', href: '/store-issuance-note' },
@@ -91,28 +92,29 @@ function Navbar() {
       icon: <ClipboardPlus color='#42B682'/>,
       title: 'Reports',
       items: [
-        { icon:<Logs size={20} color='#42B682' /> , name: 'Material Accounts Detail', href: '/reports/material-accounts-detail' },
-        { icon: <Logs size={20} color='#42B682' />, name: 'Issuance Report', href: '/reports/issuance-report' },
-        { icon: <ClipboardList size={20} color='#42B682' />, name: 'Inventory Ledger', href: '/reports/inventory-ledger' },
-        { icon: <ClipboardPen size={20} color='#42B682' />, name: 'Purchase Requisition Report', href: '/reports/purchase-requisition-report' },
-        { icon: <CarFront size={20} color='#42B682' />, name: 'Inward Gate Pass Report', href: '/reports/inward-gate-pass-report' },
-        { icon:<ShoppingCart size={20} color='#42B682' /> , name: 'Purchase Order Report', href: '/reports/purchase-order-report' },
-        { icon: <ClipboardType size={20} color='#42B682' />, name: 'GRN Report', href: '/reports/grn-report' },
-        { icon: <SlidersVertical size={20} color='#42B682' />, name: 'Material Balance Report', href: '/reports/material-balance-report' },
-        { icon:<Rows4 size={20} color='#42B682'/> , name: 'Material Closing Balance Report', href: '/reports/material-closing-balance-report' },
-        { icon: <PanelTopOpen size={20} color='#42B682' />, name: 'Multiple Ledger', href: '/reports/multiple-ledger' },
+        { icon:<Logs size={20} color='#42B682' /> , name: 'Material Accounts Detail', href: '/material-account-details' },
+        { icon: <Logs size={20} color='#42B682' />, name: 'Issuance Report', href: '/issuance-report' },
+        { icon: <ClipboardList size={20} color='#42B682' />, name: 'Inventory Ledger', href: '/inventory-ledger' },
+        { icon: <ClipboardPen size={20} color='#42B682' />, name: 'Purchase Requisition Report', href: '/search-by' },
+        { icon: <ClipboardCopy size={20} color='#42B682' />, name: 'Inward Gate Pass Report', href: '/inward-gate-pass-report' },
+        { icon: <ClipboardCopy size={20} color='#42B682' />, name: 'Outward Gate Pass Report', href: '/outward-gate-pass-report' },
+        { icon:<ShoppingCart size={20} color='#42B682' /> , name: 'Purchase Order Report', href: '/purchase-order-report' },
+        { icon: <ClipboardType size={20} color='#42B682' />, name: 'GRN Report', href: '/search' },
+        { icon: <SlidersVertical size={20} color='#42B682' />, name: 'Material Balance Report', href: '/material-balance-report' },
+        { icon:<Rows4 size={20} color='#42B682'/> , name: 'Material Closing Balance Report', href: '/material-closing-balance-reports' },
+        { icon: <PanelTopOpen size={20} color='#42B682' />, name: 'Multiple Ledger', href: '/multiple-leadger' },
       ],
     },
     {
       icon: <BadgeDollarSign color='#42B682'/>,
       title: 'Sales',
       items: [
-        { icon:<ClipboardCheck size={20} color='#42B682'/> , name: 'Finished Goods Transfer Report', href: '/sales/finished-goods-transfer-report' },
-        { icon:<ClipboardCheck size={20} color='#42B682' /> , name: 'Finished Goods Dispatch Report', href: '/sales/finished-goods-dispatch-report' },
-        { icon:<PanelTopOpen size={20} color='#42B682' /> , name: 'Finished Goods Ledger', href: '/sales/finished-goods-ledger' },
-        { icon:<CirclePercent size={20} color='#42B682' /> , name: 'Sales Order', href: '/sales/sales-order' },
-        { icon:<ClipboardCheck size={20} color='#42B682' /> , name: 'Finished Goods Report', href: '/sales/finished-goods-report' },
-        { icon: <UserRound size={20} color='#42B682' />, name: 'Customer', href: '/sales/customer' },
+        { icon:<ClipboardCheck size={20} color='#42B682'/> , name: 'Finished Goods Transfer Report', href: '/fg-Transfer-Report-main' },
+        { icon:<ClipboardCheck size={20} color='#42B682' /> , name: 'Finished Goods Dispatch Report', href: '/fg-Dispatch-Report-main' },
+        { icon:<PanelTopOpen size={20} color='#42B682' /> , name: 'Finished Goods Ledger', href: '/finished-good-leadger' },
+        { icon:<CirclePercent size={20} color='#42B682' /> , name: 'Sales Order', href: '/sales-order-main' },
+        { icon:<ClipboardCheck size={20} color='#42B682' /> , name: 'Finished Goods Report', href: '/finish-good-report-main' },
+        { icon: <UserRound size={20} color='#42B682' />, name: 'Customer', href: '/customer-main' },
       ],
     },
     {
@@ -129,7 +131,7 @@ function Navbar() {
           <button onClick={toggleMenu} className='text-[#42B682]'>
             <LayoutDashboard />
           </button>
-          <Link className="bg-[#DB4CCA] text-white py-1 px-3 rounded" href="/sign-in">
+          <Link className="bg-[#42B682] text-white py-1 px-3 rounded hover:bg-[#333B48]" href="/sign-in">
             Sign-in
           </Link>
         </div>

@@ -34,12 +34,12 @@ const MaterialAccount = () => {
     };
 
     return (
-        <div className='w-[106.2%] bg-[#1E1E2E] -ml-10 p-[61px]  -mb-10 -mt-[40px]'>
+        <div className='w-[106.2%] bg-[#1E1E2E] -ml-10 p-[61px]  -mb-10 -mt-[200px]'>
         <div className="super-category-container material-return-form-container bg-[#27303D] p-6">
             <h1 className="form-title text-xl mb-4">Material Accounts</h1>
             <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-                    <div className="grid grid-cols-10 gap-6">
+                    <div className="grid grid-cols-2 sm:grid-cols-5 lg:grid-cols-10 gap-6">
                         {/* Part 1: Source Code, Super Name, Control Code, Control Name, Code, UOM */}
                         <div className="form-part p-4 rounded-md shadow-md col-span-7">
                             <h2 className="form-part-title text-lg mb-4">Source Details</h2>

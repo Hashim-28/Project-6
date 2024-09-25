@@ -29,11 +29,11 @@
         }
         
     return (
-        <div className='w-[400px]  rounded-xl raduis-10 p-10 bg-[#27303d] ml-[450px] '>
+        <div className='w-[400px]  rounded-xl raduis-10 p-10 bg-[#27303d] ml-[450px] mt-[100px]'>
         <Form {...form}  >
     <ParticlesComponent id="particles"/>
         
-        <form onSubmit={form.handleSubmit(onSubmit)} className="w-full">
+        <form onSubmit={form.handleSubmit(onSubmit)} className="w-full ">
         
             
         <FormField

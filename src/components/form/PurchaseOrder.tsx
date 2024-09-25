@@ -47,11 +47,11 @@ const PurchaseOrder = () => {
     };
 
     return (
-        <div className='w-[106.2%] bg-[#1E1E2E] -ml-10 p-[61px]  -mb-10 -mt-[40px]'>
-        <div className="material-return-form-container p-6  bg-[#27303D] shadow-md rounded-md mt-40">
+        <div className='w-[106.2%] bg-[#1E1E2E] -ml-10 p-[61px]   -mb-10 -mt-[40px]'>
+        <div className="material-return-form-container p-6  bg-[#27303D] shadow-md rounded-md mt-5">
             <h1 className="text-xl font-semibold mb-8">Purchase Order</h1>
             <form onSubmit={handleSubmit(onSubmit)}>
-                <div className="grid grid-cols-4 gap-4 mb-4">
+                <div className="grid  grid-cols-1 sm:grid-cols-4 lg:grid-cols-4  gap-4 mb-4">
                     <div>
                         <label className="flex text-sm font-medium text-gray-700"><ClipboardList  className='pr-1'/>Reg No</label>
                         <Input
@@ -90,7 +90,7 @@ const PurchaseOrder = () => {
                     </div>
                 </div>
                
-                <div className="grid grid-cols-5 gap-4 mb-4">
+                <div className="grid  grid-cols-2 sm:grid-cols-5 lg:grid-cols-5  gap-4 mb-4">
                 <div>
                         <label className="flex text-sm font-medium text-gray-700"><CalendarRange className='pr-1'/>Delivery Date</label>
                         <Input
@@ -134,7 +134,7 @@ const PurchaseOrder = () => {
                         />
                     </div>
                 </div>
-                <div className="grid grid-cols-12 gap-4 mb-4">
+                <div className="grid  grid-cols-2 sm:grid-cols-6 lg:grid-cols-12  gap-4 mb-4">
                 <div className="col-span-2">
                         <label className="flex text-sm font-medium text-gray-700 w-[120px] mt-1"><ChartNoAxesCombined  className='pr-1'/>Total Demand</label>
                         <select className="flex w-full p-2 border border-gray-100 bg-white rounded-md shadow-sm bg-transparent sm:text-sm"  defaultValue=""
@@ -259,7 +259,7 @@ const PurchaseOrder = () => {
                     <div className="mb-4">
                     <h2 className="text-lg font-semibold mb-2 flex"><MapPinCheckInside className='pr-1'/>Added Items</h2>
                     {items.map((item, index) => (
-                        <div key={index} className="border p-2 mb-2 rounded bg-white grid grid-cols-8 gap-4 items-center">
+                        <div key={index} className="border p-2 mb-2 rounded bg-white grid  grid-cols-2 sm:grid-cols-4 lg:grid-cols-8  gap-4 items-center">
                             <div>SI : {index+1}</div>
                             <div className="col-span-2">Item Code: {item.itemCode}</div>
                             <div className="col-span-1">Item Name: {item.itemName}</div>

@@ -47,10 +47,10 @@ const GRN = () => {
     };
     return (
         <div className='w-[106.2%] bg-[#1E1E2E] -ml-10 p-[61px]  -mb-10 -mt-[40px]'>
-        <div className="material-return-form-container p-6 bg-[#27303D] shadow-md rounded-md mt-[400px]">
+        <div className="material-return-form-container p-6 bg-[#27303D] shadow-md rounded-md mt-[50px]">
             <h1 className="text-xl font-semibold mb-8">GRN</h1>
             <form onSubmit={handleSubmit(onSubmit)}>
-                <div className="grid grid-cols-2 gap-4 mb-4">
+                <div className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-2  gap-4 mb-4">
                    
                     <div>
                         <label className="flex text-sm font-medium text-gray-700"><ScrollText className='pr-1'/>GRN No</label>
@@ -72,7 +72,7 @@ const GRN = () => {
                     </div>
                 </div>
                
-                <div className="grid grid-cols-3 gap-4 mb-4">
+                <div className="grid  grid-cols-1 sm:grid-cols-3 lg:grid-cols-3  gap-4 mb-4">
                 <div>
                         <label className="flex text-sm font-medium text-gray-700"><ShoppingCart className='pr-1'/>PO No</label>
                         <Input
@@ -105,7 +105,7 @@ const GRN = () => {
 
                     </div>
                 </div>
-                <div className="grid grid-cols-4 gap-4 mb-4">
+                <div className="grid  grid-cols-2 sm:grid-cols-4 lg:grid-cols-4  gap-4 mb-4">
                 <div>
                         <label className="flex text-sm font-medium text-gray-700"><CalendarRange className='pr-1'/>IGP Date</label>
                         <Input
@@ -143,7 +143,7 @@ const GRN = () => {
                         />
                     </div>
                 </div>
-                <div className="grid grid-cols-11 gap-4 mb-4 " >
+                <div className="grid  grid-cols-2 sm:grid-cols-6 lg:grid-cols-11  gap-4 mb-4 " >
                 <div className="col-span-2 mt-[6px]">
                         <label className="flex text-sm font-medium text-gray-700 w-[100px]"><SquareChartGantt className='pr-1'/>IT Code</label>
                         <select className="flex w-full p-2 border border-gray-100 bg-white rounded-md shadow-sm focus:outline-none   focus:border-black focus:border-2 sm:text-sm"  defaultValue=""
@@ -264,7 +264,7 @@ const GRN = () => {
                     <div className="mb-4">
                     <h2 className="text-lg font-semibold mb-2 flex"><MapPinCheckInside className='pr-1'/>Added Items</h2>
                     {items.map((item, index) => (
-                        <div key={index} className="border p-2 mb-2 rounded bg-white grid grid-cols-8 gap-4 items-center">
+                        <div key={index} className="border p-2 mb-2 rounded bg-white grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4 items-center">
                             <div>SI : {index+1}</div>
                             <div className="col-span-2">Item Code: {item.itemCode}</div>
                             <div className="col-span-1">Item Name: {item.itemName}</div>
